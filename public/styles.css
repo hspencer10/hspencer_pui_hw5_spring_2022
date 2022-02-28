@@ -70,7 +70,7 @@ body {
 }
 
 .calendar-view {
-    width: 85%;
+    width: 88%;
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 8px;
@@ -101,6 +101,32 @@ body {
     background-color: pink;
     border-radius: 25px;
     position: absolute;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.pull-right #course2 {
+    color: black;
+    background-color: lightblue;
+    border-radius: 25px;
+    margin-left: 320px;
+    margin-top: 210px;
+    position: absolute;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.pull-right #course3 {
+    color: black;
+    background-color: lightgreen;
+    border-radius: 25px;
+    margin-left: 670px;
+    margin-top: 340px;
+    position: absolute;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .pull-right #course1-1 {
@@ -108,6 +134,33 @@ body {
     background-color: pink;
     border-radius: 25px;
     margin-left: 640px;
+    position: absolute;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.pull-right #course2-1 {
+    color: black;
+    background-color: lightblue;
+    border-radius: 25px;
+    margin-left: 1000px;
+    margin-top: 310px;
+    position: absolute;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.pull-right #course3-1 {
+    color: black;
+    background-color: lightgreen;
+    border-radius: 25px;
+    margin-left: 1340px;
+    margin-top: 200px;
+    position: absolute;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* Helper Classes */
