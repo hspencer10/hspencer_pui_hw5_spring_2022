@@ -163,6 +163,11 @@ body {
     padding-bottom: 30px;
 }
 
+.pull-right a {
+    text-decoration: none;
+    color: black;
+}
+
 /* Helper Classes */
 small {
     font-size: 9px;
