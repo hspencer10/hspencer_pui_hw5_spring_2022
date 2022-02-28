@@ -23,7 +23,26 @@
   </head>
 
   <body>
-    <h1 class="home-page">Schedule for:</h1>
+    <form action="/action_page.php" class="semester">
+      <label for="sems">Schedule for:</label>
+      <select name="sems" id="sems">
+        <option value="s22">Spring 2022</option>
+        <option value="f22">Fall 2022</option>
+        <option value="s23">Spring 2023</option>
+        <option value="f23">Fall 2023</option>
+        <option value="s24">Spring 2024</option>
+      </select>
+      <p class="units">Total Units: 54</p>
+    </form>
+
+    <ul class="classes-list">
+      <li class="classes"><p>Monday</p></li>
+      <li class="classes"><p>Tuesday</p></li>
+      <li class="classes"><p>Wednesday</p></li>
+      <li class="classes"><p>Thursday</p></li>
+      <li class="classes"><p>Friday</p></li>
+    </ul>
+
 
     <div class="calendar">
       <div class="time-block">
@@ -60,8 +79,8 @@
           <div class="event">
             <div class="pull-left border-blue"></div>
             <div class="pull-right">
-              <div class="event-title">Sample Item</div>
-              <span class="event-location">Sample Location</span>
+              <div class="event-title" id="course1">57-132 </br> Computer Programming</div>
+              <div class="event-title" id="course1-1">57-132 </br> Computer Programming</div>
             </div>
           </div>
       </div>
