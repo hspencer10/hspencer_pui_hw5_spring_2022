@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-ul {
+.nav-header {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -10,11 +10,11 @@ ul {
     background-color: rgb(114, 0, 0);
   }
   
-li {
+.nav-header li {
     float: right;
 }
   
-li a {
+.nav-header li a {
     display: block;
     color: white;
     text-align: center;
@@ -23,24 +23,24 @@ li a {
   }
   
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.nav-header li a:hover {
     background-color: rgb(129, 129, 129);
 }
   
 
-.active {
+.nav-header .active {
     background-color: #ffffff;
     color: black;
 }
 
-.greet {
+.nav-header .greet {
     float: left;
     color: white;
     padding: 7px 30px;
     vertical-align: middle;
 }
 
-.account {
+.nav-header .account {
     padding: 21px 21px;
 }
 
@@ -227,23 +227,115 @@ li.classes p {
 }
 
 /* Detail Page */
-.course-detail {
-    font-weight: 700;
+.course-header img {
+    float: left;
+    padding-top: 15px;
+    padding-left: 25px;
+}
+
+.course-header .reqs-filled {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    float: right;
+    padding-right: 200px;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+.hide {
+    display: none;
+}
+
+.reqs-filled:hover + .hide {
+    display: block;
+    color: black;
+}
+  
+.course-header h1 {
+    position: relative;
+    text-align: center;
+    top: 18px;
+    left: 10px;
+    margin-left: 500px;
+    width: 1000px;
+}
+
+.course-info {
+    background: white;
+    float: left;
+    text-align: center;
+    padding-left: 0px;
+    width: 100%;
+}
+
+.info {
+    display: inline-block;
+    padding: 10px 80px;
+    font-size: 20px;
+}
+
+/* Schedule table */
+div.detailed-info .tab {
+    width: 60%;
+    float: left;
+}
+table.schedule {
+    margin-left: 25px;
+    background: rgb(173, 173, 173);
+    border: 1px solid;
+    border-color: black;
+}
+
+table.schedule th {
+    height: 70px;
     text-align: center;
 }
 
-.back {
-    display: inline;
-    top: 5%;
-    left: 5%;
-    white-space: nowrap;
+table.schedule td {
+    padding: 50px 10px;
+    height: 40px;
 }
 
-.back p{
-    font-weight: 700;
-    font-size: 15px;
-    color: black;
-    text-decoration: none;
-    white-space: nowrap;
-    display: inline;
+table.schedule td.one {
+    background-color: pink;
+    border: 1px solid;
+    border-color: red;
+    border-radius: 25px;
+    width: 160px;
+}
+
+table.schedule td.two {
+    background-color: lightblue;
+    border-radius: 25px;
+    width: 160px;
+}
+
+table.schedule td.three {
+    background-color: lightgreen;
+    border-radius: 25px;
+    width: 160px;
+}
+
+div.detailed-info .desc {
+    width: 40%;
+    float: right;
+}
+
+div.desc p.description {
+    float: left;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 1px solid;
+    border-color:#686868;
+    border-radius: 25px;
+    background-color:lightgray;
+    padding-bottom: 200px;
+    padding-right: 500px;
+
+}
+
+div.actions img {
+    padding: 20px 40px;
 }
