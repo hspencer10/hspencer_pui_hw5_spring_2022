@@ -1,3 +1,20 @@
+//Main storage
+var allCourses = [
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+];
+var currentCourses = [];
+
+
+// Calendar functions
 function Event (start, end) {
     this.start = start;
     this.end = end;
@@ -41,5 +58,55 @@ function drawEvent(view, start, end, title, location) {
     view.appendChild(newEvent);
 }
 
-  
+// Removing Popup
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("modalBTN");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+modal.style.display = "none";
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  closeModal();
+}
+
+function closeModal() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Switching sections
+function switchSection(selector){
+    var table = document.querySelector('#schedule');
+    var currentIndexes = {};
+
+    for (let i in table.rows) {
+        let row = table.rows[i]
+        //iterate through rows
+        //rows would be accessed using the "row" variable assigned in the for loop
+        for (let j in row.cells) {
+          let col = row.cells[j]
+          //iterate through columns
+          //columns would be accessed using the "col" variable assigned in the for loop
+          if(col.className == null){
+              currentIndexes.appendChild()
+          }
+        }  
+     }
+}
   
