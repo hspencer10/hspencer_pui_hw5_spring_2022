@@ -1,19 +1,3 @@
-//Main storage
-var allCourses = [
-    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
-    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
-    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
-    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
-    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
-    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
-    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
-    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
-    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
-    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
-];
-var currentCourses = [];
-
-
 // Calendar functions
 function Event (start, end) {
     this.start = start;
