@@ -1,3 +1,20 @@
+//Main storage
+var allCourses = [
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+    {courseNum: "", title: "", professor: "", section: "", units: 0, fce: 0, description: "", fulfilled: ""},
+];
+var currentCourses = [];
+
+
+// Calendar functions
 function Event (start, end) {
     this.start = start;
     this.end = end;
@@ -73,5 +90,23 @@ window.onclick = function(event) {
   }
 }
 
-  
+// Switching sections
+function switchSection(selector){
+    var table = document.querySelector('#schedule');
+    var currentIndexes = {};
+
+    for (let i in table.rows) {
+        let row = table.rows[i]
+        //iterate through rows
+        //rows would be accessed using the "row" variable assigned in the for loop
+        for (let j in row.cells) {
+          let col = row.cells[j]
+          //iterate through columns
+          //columns would be accessed using the "col" variable assigned in the for loop
+          if(col.className == null){
+              currentIndexes.appendChild()
+          }
+        }  
+     }
+}
   
