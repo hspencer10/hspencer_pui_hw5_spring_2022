@@ -84,6 +84,7 @@ table.schedule td {
     height: 40px;
     text-align: center;
     font-size: large;
+    width: 175px;
 }
 
 table.schedule td.one {
@@ -146,6 +147,12 @@ div.actions img {
     max-width: 80%;
 }
 
+.modal#myModalSwitch {
+    border: 1px solid rgb(255, 166, 0);
+    top: 35%;
+    left: 75%;
+}
+
 .modal-header {
     padding: 10px 15px;
     display: flex;
@@ -154,11 +161,20 @@ div.actions img {
     border-bottom: 1px solid red;
 }
 
+.modal-header#switch {
+    border-bottom: 1px solid rgb(255, 166, 0);
+}
+
 .modal-header .modal-title {
     font-size: 2.25rem;
     font-weight: bold;
     color: red;
     padding-left: 38%;
+}
+
+.modal-header .modal-title#switch {
+    color: rgb(255, 166, 0);
+    padding-left: 30%;
 }
 
 .close{
@@ -179,6 +195,12 @@ div.actions img {
     padding: 10px 15px;
     font-size: 20px;
     text-align: center;
+}
+
+.modal-body#switch {
+    text-align: left;
+    padding-left: 50px;
+    padding-bottom: 30px;
 }
 
 button {
@@ -208,5 +230,13 @@ button {
     margin-left: 10px;
     background-color: rgb(255, 217, 0);
     border: 1px solid rgb(206, 175, 0);
+    color: white;
+}
+
+.btn#switch {
+    float: right;
+    margin-right: 10px;
+    background-color: rgb(90, 224, 0);
+    border: 1px solid rgb(71, 179, 0);
     color: white;
 }
