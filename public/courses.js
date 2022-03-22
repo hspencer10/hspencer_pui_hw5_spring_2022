@@ -79,7 +79,8 @@ var currentCourses = [
         units: 10, 
         fce: 6, 
         description: "A course committed to helping students learn the fundamentals of computer programming.", 
-        fulfilled: "Information Systems - Tech Core"},
+        fulfilled: "Information Systems - Tech Core",
+        index: [{row: 1, col: 0}, {row: 1, col: 4}]},
     {courseNum: "67-443", 
         title: "Mobile App Development", 
         professor: "Prof H", 
@@ -87,7 +88,8 @@ var currentCourses = [
         units: 12, 
         fce: 16, 
         description: "Provide students with the knowledge to be able to design and develop their own mobile application", 
-        fulfilled: "Information Systems - Disciplinary Core"},
+        fulfilled: "Information Systems - Disciplinary Core",
+        index: [{row: 2, col: 1}, {row: 3, col: 3}]},
     {courseNum: "67-373", 
         title: "IS Consulting", 
         professor: "Prof Mertz", 
@@ -95,5 +97,6 @@ var currentCourses = [
         units: 12, 
         fce: 10, 
         description: "Students will work with a community partner to help them solve their pain points in an effective and sustainable solution.", 
-        fulfilled: "Information Systems - Professional Core"}
+        fulfilled: "Information Systems - Professional Core",
+        index: [{row: 2, col: 4}, {row: 4, col: 2}]}
 ];
